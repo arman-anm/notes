@@ -1,0 +1,130 @@
+/* <===== FONTS =====> */
+
+
+/* <===== ROOT & VARIABLES =====> */
+:root {
+  /* TYPOGRAPHY */
+  font-size: 10px;  /* making my font size 10px would make it easier to calculate  */
+  --ff-primary: ;
+  --ff-secondary: ;
+  --fs-p: ;
+  --fs-h1: ;
+  --fs-h2: ;
+  --fs-h3: ;
+  --fs-btn: ;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-bold: 700; 
+  /* COLOR */
+  --color-body-bg: ;
+  --color-txt: ;
+  --color-a-link: ;
+  --color-a-hover: ;
+  --color-a-active: ;
+  --color-a-visited: ;
+  --color-h1: ;
+  --color-h2: ;
+  --color-h3: ;
+  --color-btn-bg: ;
+  --color-btn-txt: ;
+  --color-btn-border: ;
+  --color-btn-hover-bg: ;
+  --color-btn-hover-txt: ;
+  /* LAYOUT */
+  --white-space: ;
+  --white-space-extended: ;
+}
+
+/* <===== GLOBAL STYLES =====> */
+h1 {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-bold);
+  text-transform: capitalize;
+  color: var(--color-h1);
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-medium);
+  text-transform: capitalize;
+  color: var(--color-h2);
+  line-height: 1.35;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-medium);
+  text-transform: capitalize;
+  color: var(--color-h3);
+  line-height: 1.35;
+  margin-bottom: .5rem;
+}
+
+p {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-p);
+  font-weight: var(--fw-normal);
+  color: var(--color-txt);
+  line-height: 1.5;
+  margin-bottom: 1.75rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-a-link);
+}
+
+a:hover {
+  color: var(--color-a-hover);
+}
+
+a:active {
+  color: var(--color-a-active);
+}
+
+a:visited {
+  color: var(--color-a-visited);
+}
+
+
+.btn-wrapper {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--color-btn-bg);
+  color: var(--color-btn-txt);
+  font-size: var(--fs-btn);
+  text-transform: capitalize;
+  padding: 1rem 2rem;
+  border: 2px solid var(--color-btn-border);
+  border-radius: 5px;
+  transition: .3s;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: var(--color-btn-txt);
+  color: var(--color-btn-bg);
+  font-weight: var(--fw-bold);
+}
+
+/* <===== BODY =====> */
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-p);
+  color: var(--color-txt);
+  background-color: var(--color-body-bg);
+  padding: var(--white-space);
+}
